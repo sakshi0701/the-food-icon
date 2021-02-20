@@ -1,0 +1,48 @@
+.fb {
+    margin: 0 1rem;
+    color: white;
+    display: inline-block;
+}
+
+.insta {
+    margin: 0 1rem;
+    color: white;
+    display: inline-block;
+}
+
+.yt {
+    margin: 0 1rem;
+    color: white;
+    display: inline-block;
+}
+
+.twitter {
+    margin: 0 1rem;
+    color: white;
+    display: inline-block;
+}
+
+
+.fb:hover {
+    margin: 0 1rem;
+    color: blue;
+    transform: translateY(-2px);
+}
+
+.insta:hover {
+    margin: 0 1rem;
+    color: rgb(207, 0, 97);
+    transform: translateY(-2px);;
+}
+
+.yt:hover {
+    margin: 0 1rem;
+    color: red;
+    transform: translateY(-2px);;
+}
+
+.twitter:hover {
+    margin: 0 1rem;
+    color: rgb(0, 81, 255);
+    transform: translateY(-2px);;
+}
