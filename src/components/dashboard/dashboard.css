@@ -1,113 +1,112 @@
 body {
-    height: 100vh;
-    width: 100%;
-    background: rgb(37, 37, 37);
+  height: 100vh;
+  width: 100%;
 }
 
 .App {
-    min-height: 200vh;
-    width: 100%;
-    background: rgb(37, 37, 37);
-    padding: 0px;
-    margin: 0px;
-  }
-  
-  h1 {
-    margin: 0px;
-  }
-  
-  p {
-    font-weight: bold;
-  }
-  
-  span{
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    background-color: yellow;
-    color: rgb(9, 73, 0);
+  min-height: 200vh;
+  width: 100%;
+  background: rgb(37, 37, 37);
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+p {
+  font-weight: bold;
+}
+
+span{
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  background-color: yellow;
+  color: rgb(9, 73, 0);
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.search-form {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 70%;
+  border: none;
+  padding: 10px;
+}
+
+.search-button {
+  background-color: yellowgreen;
+  padding: 10px 20px;
+  margin: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+}
+
+.search-button:hover {
+  background-color: rgb(77, 201, 77);
+  color: white;
+  transition: 1s;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid green;
+  color: white;
+  height: 15vh;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.footer1 {
+  border-top: 4px solid green;
+  background-color: rgb(46, 46, 46);
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile {
     display: flex;
-    flex-grow: 1;
     justify-content: center;
     align-items: center;
-    height: 25vh;
-  }
-  
-  .search-form {
-    min-height: 50vh;
+}
+
+.logout-btn {
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-  
-  .search-bar {
-    width: 70%;
+    justify-content: center;
+    color: white;
+    height: 40px;
+    width: 250px;
+    background: green;
+    margin: 30px;
     border: none;
-    padding: 10px;
-  }
-  
-  .search-button {
-    background-color: yellowgreen;
-    padding: 10px 20px;
-    margin: 20px;
-    font-weight: bold;
     border-radius: 20px;
-    border: none;
-  }
-  
-  .search-button:hover {
-    background-color: rgb(77, 201, 77);
-    color: white;
-    transition: 1s;
-  }
-  
-  .recipes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .footer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid green;
-    color: white;
-    height: 15vh;
-    font-size: 25px;
-    letter-spacing: 1px;
-    font-family: 'Indie Flower', cursive;
-  }
-
-  .footer1 {
-    border-top: 4px solid green;
-    background-color: rgb(46, 46, 46);
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .profile {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  .logout-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      height: 40px;
-      width: 250px;
-      background: green;
-      margin: 30px;
-      border: none;
-      border-radius: 20px;
-  }
+}

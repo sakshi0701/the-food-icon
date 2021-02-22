@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaBars } from "react-icons/fa";
-import {Nav,NavbarContainer,NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from "./navstyle.js";
+import { Nav,NavbarContainer,NavLogo, NavMenu, NavItem, NavLinks } from "./navstyle.js";
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({toggle}) => {
@@ -10,30 +9,25 @@ const Navbar = ({toggle}) => {
         scroll.scrollToTop();
     }
 
+    const toBottom = () => {
+        scroll.scrollToBottom();
+    }
+
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/' onClick={toggleHome}>The Food Icon</NavLogo>
-                        <MobileIcon onClick = {toggle}>
-                            <FaBars />
-                        </MobileIcon>
-                        <NavMenu>
-                            <NavItem>
-                                <NavLinks to='food'
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact='true'
-                                offset={-80}
-                                >Food</NavLinks>
-                            </NavItem>
-                        </NavMenu>                    
+                    <NavLogo to='/' onClick={toggleHome}>The Food Icon</NavLogo> 
+                    <NavMenu>
+                        <NavItem>
+                            <NavLinks onClick={toBottom}>Your Profile</NavLinks>
+                        </NavItem>
+                    </NavMenu>                  
                 </NavbarContainer>
             </Nav>
         </>
     )
 }
 
-export default Navbar
+export default Navbar;
 

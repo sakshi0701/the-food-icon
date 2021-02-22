@@ -47,21 +47,21 @@ export const NavLogo = styled(RLink)`
     }
 `;
 
-export const MobileIcon = styled.div`
-    display: none;
+// export const MobileIcon = styled.div`
+//     display: none;
 
-    @media screen and (max-width: 768px) {
-        display:block;
-        position: absolute;
-        top:0;
-        right: 0;
-        transform: translate(-100%,60%);
-        font-size: 1.8rem
-        cursor: pointer;
-        color: white;
-        margin-top: 12px;
-    }
-`;
+//     @media screen and (max-width: 768px) {
+//         display:block;
+//         position: absolute;
+//         top:0;
+//         right: 0;
+//         transform: translate(-100%,60%);
+//         font-size: 1.8rem
+//         cursor: pointer;
+//         color: white;
+//         margin-top: 12px;
+//     }
+// `;
 
 export const NavMenu = styled.ul`
     display: flex;
@@ -81,6 +81,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(SLink)`   
     color: white;
+    margin-top: 3px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -88,35 +89,38 @@ export const NavLinks = styled(SLink)`
     height: 100%;
     cursor: pointer;
 
-    &.active {
-        border-bottom: 2px solid lightblue;
+    &:hover {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        transition: .5s;
     } 
 `;
 
-export const NavButton = styled.nav`
-display: flex;
-align-items: center;
+// export const NavButton = styled.nav`
+// display: flex;
+// align-items: center;
 
-@media screen and (max-width: 760px) {
-    display: none;
-}
-`;
+// @media screen and (max-width: 760px) {
+//     display: none;
+// }
+// `;
 
-export const NavButtonLink = styled(RLink)`
-border-radius: 50px;
-color: white;
-background:  rgb(38, 190, 100);
-white-space:nowrap;
-padding: 10px 22px;
-font-size: 16px;
-outline: none;
-border: none;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
+// export const NavButtonLink = styled(RLink)`
+// border-radius: 50px;
+// color: white;
+// background:  rgb(38, 190, 100);
+// white-space:nowrap;
+// padding: 10px 22px;
+// font-size: 16px;
+// outline: none;
+// border: none;
+// cursor: pointer;
+// transition: all 0.2s ease-in-out;
+// text-decoration: none;
 
-&:hover {
-    transition: all 0.2s ease-in-out;
-    background: rgb(38, 224, 119);
-}
-`;
+// &:hover {
+//     transition: all 0.2s ease-in-out;
+//     background: rgb(38, 224, 119);
+// }
+// `;

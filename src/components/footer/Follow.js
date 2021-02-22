@@ -1,4 +1,3 @@
-import { faLongArrowAltDown } from "@fortawesome/free-solid-svg-icons";
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'

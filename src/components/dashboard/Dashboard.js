@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Button, Alert } from "react-bootstrap"
+import { Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { BrowserRouter as Router, Link, useHistory } from "react-router-dom"
 import Recipe from "../recipe/Recipe";
@@ -12,6 +12,8 @@ export default function Dashboard() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
   const history = useHistory()
+
+  const [isOpen, setIsOpen]  = useState(false);
 
   async function handleLogout() {
     setError("")
@@ -75,10 +77,6 @@ export default function Dashboard() {
               />
             ))}
           </div>
-          {/* <div className="footer">
-            <p>Follow us on:   </p>
-            <Follow />
-          </div> */}
           </Router>
           <div className="footer1">
             <Card>
@@ -88,6 +86,9 @@ export default function Dashboard() {
           <strong>Email:</strong> {currentUser.email}
           <Link to="/update-profile" className="btn btn-success w-100 mt-3">
             Update Profile
+          </Link>
+          <Link to="/recipe-notes" className="btn btn-success w-100 mt-3">
+            Your Recipe Notes
           </Link>
         </Card.Body>
       </Card>
@@ -99,8 +100,8 @@ export default function Dashboard() {
       <div  className="footer">
             <p>Follow us on:   </p>
             <Follow />
-          </div>
-          </div>
+      </div>
+    </div>
           
     </div>
     </>
