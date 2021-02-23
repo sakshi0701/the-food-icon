@@ -9,6 +9,8 @@ import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import NotesPg from "../pages/NotesPg";
 import DrinksPg from "../pages/DrinksPg"
+import VegPg from "../pages/VegPg"
+import IndPg from "../pages/IndPg"
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
               <PrivateRoute path="/recipe-notes" component={NotesPg} />
               <PrivateRoute path="/drinks" component={DrinksPg} />
+              <PrivateRoute path="/veg" component={VegPg} />
+              <PrivateRoute path="/ind" component={IndPg} />
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
