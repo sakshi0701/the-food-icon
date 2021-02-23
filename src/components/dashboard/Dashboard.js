@@ -3,17 +3,16 @@ import { Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { BrowserRouter as Router, Link, useHistory } from "react-router-dom"
 import Recipe from "../recipe/Recipe";
-import Follow from "../footer/Follow";
 import Navbar from "../Navbar/navbar";
 import "./dashboard.css";
+import Footer from "../footer/Footer";
+import Speciality from "../speciality box/Speciality";
 require('dotenv').config()
 
 export default function Dashboard() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
-  const history = useHistory()
-
-  const [isOpen, setIsOpen]  = useState(false);
+  const history = useHistory();
 
   async function handleLogout() {
     setError("")
@@ -59,9 +58,14 @@ export default function Dashboard() {
   return (
     <>
       <div className="w-100 App">
-      <Router>
-      <Navbar />
-      <form onSubmit={getSearch} className="mt-10 search-form">
+        <Router>
+          <Navbar />
+
+          <div className="special">
+            <Speciality />
+          </div>
+
+          <form onSubmit={getSearch} className="mt-10 search-form">
             <input className="search-bar" placeholder='Search Here' type="text" value={search} onChange={updateSearch} />
             <button className="search-button" type='submit'>Search</button>
           </form>
@@ -77,33 +81,33 @@ export default function Dashboard() {
               />
             ))}
           </div>
-          </Router>
-          <div className="footer1">
-            <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Your Profile</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <strong>Email:</strong> {currentUser.email}
-          <Link to="/update-profile" className="btn btn-success w-100 mt-3">
-            Update Profile
+        </Router>
+
+        <div className="footer1">
+          <Card>
+            <Card.Body>
+              <h2 className="text-center mb-4">Your Profile</h2>
+              {error && <Alert variant="danger">{error}</Alert>}
+              <strong>Email:</strong> {currentUser.email}
+              <Link to="/update-profile" className="btn btn-success w-100 mt-3">
+                Update Profile
           </Link>
-          <Link to="/recipe-notes" className="btn btn-success w-100 mt-3">
-            Your Recipe Notes
+              <Link to="/recipe-notes" className="btn btn-success w-100 mt-3">
+                Your Recipe Notes
           </Link>
-        </Card.Body>
-      </Card>
-      <div className="profile w-100 text-center mt-2 mb-10">
-        <button className="logout-btn" variant="link" onClick={handleLogout}>
-          Log Out
-        </button>
+            </Card.Body>
+          </Card>
+
+          <div className="profile w-100 text-center mt-2 mb-10">
+            <button className="logout-btn" variant="link" onClick={handleLogout}>
+              Log Out
+            </button>
+          </div>
+
+          <Footer />
+        </div>
+
       </div>
-      <div  className="footer">
-            <p>Follow us on:   </p>
-            <Follow />
-      </div>
-    </div>
-          
-    </div>
     </>
   )
 }

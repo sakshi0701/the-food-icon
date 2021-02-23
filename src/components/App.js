@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import NotesPg from "../pages/NotesPg";
+import DrinksPg from "../pages/DrinksPg"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <PrivateRoute exact path="/" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
               <PrivateRoute path="/recipe-notes" component={NotesPg} />
+              <PrivateRoute path="/drinks" component={DrinksPg} />
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />

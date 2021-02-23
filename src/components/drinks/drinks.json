@@ -1,0 +1,62 @@
+[
+	{
+		"id":"1",
+		"name": "Dr.Sanjeev Arora",
+		"speciality": "Cardiologist",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"2",
+		"name": "Dr.Ayyathan Gopalan",
+		"speciality": "Dermatologist",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"3",
+		"name": "Dr.Shaukatullah Shah Ansari",
+		"speciality": "ENT",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"4",
+		"name": "Dr.Ramashankar Panda",
+		"speciality": "Physiatrist",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"5",
+		"name": "Dr.Gaurav Sharma",
+		"speciality": "Pediatrician",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"6",
+		"name": "Dr.Meenakshi Gupta",
+		"speciality": "Gynecologist ",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"7",
+		"name": "Dr.Vishal Grover",
+		"speciality": "Plastic Surgeon",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"8",
+		"name": "Dr.Aaryan Tiwari",
+		"speciality": "Neurologist",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"9",
+		"name": "Dr.Sandra Thomas",
+		"speciality": "Radiologist",
+		"contactNo": "+91 6493029767"
+    },
+    {
+		"id":"10",
+		"name": "Dr.Y. S. Raja Reddy",
+		"speciality": "Dentist",
+		"contactNo": "+91 6493029767"
+    }
+]
