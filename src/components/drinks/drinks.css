@@ -1,36 +1,46 @@
 body {
-    height: 100vh;
-    width: 100%;
-  }
+  height: 100vh;
+  width: 100%;
+}
+
+.main {
+  border-radius: 8px;
+  background-color: rgb(191, 255, 197);
+  border-left: 4px solid green;
+  border-right: 4px solid green;
+  box-shadow: 0px 5px 20px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
+  margin: 20px;
+  padding: 15px;
+  font-family: 'Lemonada', cursive;
+}
+
+.main h2 {
+font-weight: bolder;
+color: rgb(52, 82, 0);
+}
+
+.main h3{
+font-weight: bold;
+}
+
+.main h6 {
+color: blue;
+font-family: 'Courier New', Courier, monospace;
+}
 
 .drinks {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-.drinks-area {
-    /* border: 2px solid blue; */
-    margin-top: 110px;
-    margin-bottom: 20px;
-    padding: 30px;
-    color: red;
-    border-radius: 8px;
-    background-color: rgb(191, 255, 197);
-    border-left: 4px solid green;
-    border-right: 4px solid green;
-    box-shadow: 0px 5px 20px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 90px;
-    /* margin: 20px; */
-    font-family: 'Lemonada', cursive;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .image {
-    border-radius: 8px;
-    height: 200px;
-    width: 200px;
+  border-radius: 8px;
+  height: 200px;
+  width: 200px;
 }

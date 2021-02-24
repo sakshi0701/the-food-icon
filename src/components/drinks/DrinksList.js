@@ -1,15 +1,16 @@
 import React from 'react';
 import './drinks.css'
 
-const DrinksList = ({key,name,speciality,contactNo}) => {
+const DrinksList = ({title, image, ingredients,directions,url}) => {
     return (
-        <div>
-            <div className="drinks-area">
-            {key}
-            {name}
-            <h4>{speciality}</h4>
-            <h5>{contactNo}</h5>
-        </div>
+        <div className="main">
+            <h2>{title}</h2>
+            <img className="image" src={image} alt=""/>
+            <h3>Ingredients:</h3>
+            <h4>{ingredients}</h4>
+            <h3>Directions:</h3>
+            <h4>{directions}</h4>
+            <h6>For more information: {url}</h6>
         </div>
     )
 }

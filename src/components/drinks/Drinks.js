@@ -40,9 +40,11 @@ const Drinks = () => {
                         {DrinksData.map(postDetail => (
                             <DrinksList
                                 key={postDetail.id}
-                                name={postDetail.name}
-                                speciality={postDetail.speciality}
-                                contactNo={postDetail.contactNo}
+                                title={postDetail.title}
+                                image={postDetail.image}
+                                ingredients={postDetail.ingredients}
+                                directions={postDetail.directions}
+                                url={postDetail.url}
                             />
                         ))}
                     </div>
