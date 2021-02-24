@@ -4,12 +4,12 @@ import { useAuth } from "../../contexts/AuthContext"
 import { BrowserRouter as Router, Link, useHistory } from "react-router-dom"
 import Footer from '../footer/Footer';
 import Navbar from '../Navbar/navbar';
-import DrinksData from "./drinks.json";
+import DrinksData from "./desserts.json";
 import '../speciality box/pages.css';
-import DrinksList from './DrinksList';
+import DessertList from './DessertList';
 import Speciality from '../speciality box/Speciality';
 
-const Drinks = () => {
+const Dessert = () => {
 
     const [error, setError] = useState("")
     const { currentUser, logout } = useAuth()
@@ -38,7 +38,7 @@ const Drinks = () => {
                 <Router>
                     <div className="type">
                         {DrinksData.map(postDetail => (
-                            <DrinksList
+                            <DessertList
                                 key={postDetail.id}
                                 title={postDetail.title}
                                 image={postDetail.image}
@@ -79,4 +79,4 @@ const Drinks = () => {
     )
 }
 
-export default Drinks;
+export default Dessert;

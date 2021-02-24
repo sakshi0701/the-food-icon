@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DrinksList = ({title, image, ingredients,directions,url}) => {
+const DessertList = ({title, image, ingredients,directions,url}) => {
     return (
         <div className="main">
             <h2>{title}</h2>
@@ -14,4 +14,4 @@ const DrinksList = ({title, image, ingredients,directions,url}) => {
     )
 }
 
-export default DrinksList;
+export default DessertList;

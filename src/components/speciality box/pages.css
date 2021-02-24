@@ -33,7 +33,7 @@ color: blue;
 font-family: 'Courier New', Courier, monospace;
 }
 
-.drinks {
+.type {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
