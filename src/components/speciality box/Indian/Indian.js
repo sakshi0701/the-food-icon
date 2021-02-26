@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Card, Alert } from "react-bootstrap";
-import { useAuth } from "../../contexts/AuthContext"
+import { useAuth } from "../../../contexts/AuthContext"
 import { BrowserRouter as Router, Link, useHistory } from "react-router-dom"
-import Footer from '../footer/Footer';
-import Navbar from '../Navbar/navbar';
-import DrinksData from "./desserts.json";
-import '../speciality box/pages.css';
-import DessertList from './DessertList';
-import Speciality from '../speciality box/Speciality';
+import Footer from '../../footer/Footer';
+import Navbar from '../../Navbar/navbar';
+import Data from "./Indian.json";
+import '../pages.css';
+import IndianList from './IndianList';
+import Speciality from '../Speciality';
 
-const Dessert = () => {
+const Indian = () => {
 
     const [error, setError] = useState("")
     const { currentUser, logout } = useAuth()
@@ -37,8 +37,8 @@ const Dessert = () => {
 
                 <Router>
                     <div className="type">
-                        {DrinksData.map(postDetail => (
-                            <DessertList
+                        {Data.map(postDetail => (
+                            <IndianList
                                 key={postDetail.id}
                                 title={postDetail.title}
                                 image={postDetail.image}
@@ -79,4 +79,4 @@ const Dessert = () => {
     )
 }
 
-export default Dessert;
+export default Indian;

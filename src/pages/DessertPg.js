@@ -1,5 +1,5 @@
 import React from 'react'
-import Dessert from '../components/desserts/Dessert'
+import Dessert from '../components/speciality box/desserts/Dessert'
 
 const DessertPg = () => {
     return (

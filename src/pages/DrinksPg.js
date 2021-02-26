@@ -1,5 +1,5 @@
 import React from 'react'
-import Drinks from '../components/drinks/Drinks'
+import Drinks from '../components/speciality box/drinks/Drinks'
 
 const DrinksPg = () => {
     return (

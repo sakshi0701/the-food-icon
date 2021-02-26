@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Bake from '../components/speciality box/bakes/Bake'
 
 const BakePg = () => {
     return (
         <div>
-            Bake Page
+            <Bake />
         </div>
     )
 }
