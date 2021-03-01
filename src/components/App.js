@@ -11,7 +11,6 @@ import UpdateProfile from "./UpdateProfile"
 import NotesPg from "../pages/NotesPg";
 import DrinksPg from "../pages/DrinksPg";
 import DessertPg from "../pages/DessertPg";
-import StartersPg from "../pages/StartersPg";
 import BakePg from "../pages/BakePg";
 import VegPg from "../pages/VegPg";
 import IndPg from "../pages/IndPg";
@@ -30,7 +29,6 @@ function App() {
               <PrivateRoute path="/recipe-notes" component={NotesPg} />
               <PrivateRoute path="/drinks" component={DrinksPg} />
               <PrivateRoute path="/dessert" component={DessertPg} />
-              <PrivateRoute path="/starter" component={StartersPg} />
               <PrivateRoute path="/bake" component={BakePg} />
               <PrivateRoute path="/veg" component={VegPg} />
               <PrivateRoute path="/ind" component={IndPg} />
