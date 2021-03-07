@@ -1,0 +1,23 @@
+.all{
+    margin: 0;
+    padding: 0;
+}
+
+.all .contain {
+    color: white;
+    margin-top: 90px;
+    padding: 67px;
+}
+
+body::before{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSR0YJyO7WOAtBpBDfKEbP6x8znv69bcdZ9w&usqp=CAU') no-repeat center center/cover;
+    content: "";
+    image-resolution: 200;
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
