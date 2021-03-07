@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./notes.css";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
 import Count from "./count";
 import Navbar from "../Navbar/navbar";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
 function RecipeNotes(props) {
+
+  const [note, setNote] = useLocalStorage('note', '');
+
+  useEffect(() => {
+    localStorage.setItem('note', JSON.stringify(note))
+  },[note])
+
   const [notes, setNotes] = useState([]);
 
   function addNote(newNote) {
+
     setNotes((prev) => {
       return [...prev, newNote];
     });
@@ -42,11 +51,11 @@ function RecipeNotes(props) {
             title={n.title}
             content={n.content}
             onDelete={deleteNotes}
+            value={note}
+            onChange={setNote}
           />
         ))}
       </div>
-
-
     </div>
   );
 }
