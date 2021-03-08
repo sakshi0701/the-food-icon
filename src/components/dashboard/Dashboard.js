@@ -10,7 +10,9 @@ import Speciality from "../speciality box/Speciality";
 require('dotenv').config()
 
 export default function Dashboard() {
-  const [error, setError] = useState("")
+
+  const [Loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const { currentUser, logout } = useAuth()
   const history = useHistory();
 
@@ -40,9 +42,11 @@ export default function Dashboard() {
   }, [query]);                  //now gonna run only when we click submit
 
   const getRecipies = async () => {
+    setLoading(!Loading);
     const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await response.json();
     setRecipies(data.hits);     // the "hits" in the json has all the data req!
+    setLoading(false);
   };
 
   const updateSearch = e => {
@@ -69,6 +73,14 @@ export default function Dashboard() {
             <input className="search-bar" placeholder='Search Here' type="text" value={search} onChange={updateSearch} />
             <button className="search-button" type='submit'>Search</button>
           </form>
+
+          <div className="load">
+          {Loading && (
+                <div className="d-flex justify-content-center text-center spinner-border text-success" role="status">
+                    {/* <p class="visually-hidden"></p> */}
+                </div>
+          )}
+          </div>
 
           <div className="recipes">
             {recipies.map(recipe => (

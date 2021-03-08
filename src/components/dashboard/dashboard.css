@@ -126,3 +126,10 @@ span{
   font-size: 30px;
   color: red;
 }
+
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
