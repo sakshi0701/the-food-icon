@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import { Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { BrowserRouter as Router, Link, useHistory } from "react-router-dom"
@@ -59,6 +61,10 @@ export default function Dashboard() {
     setSearch('');              //setting the search bar empty after searching
   }
 
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <>
       <div className="w-100 App">
@@ -82,7 +88,7 @@ export default function Dashboard() {
           )}
           </div>
 
-          <div className="recipes">
+          <div className="recipes" data-aos="fade-up">
             {recipies.map(recipe => (
               <Recipe
                 key={recipe.recipe.label}

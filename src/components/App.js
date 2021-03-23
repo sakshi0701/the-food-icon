@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { AuthProvider } from "../contexts/AuthContext"
 import Signup from "./Signup"
@@ -15,6 +15,7 @@ import VegPg from "../pages/VegPg";
 import IndPg from "../pages/IndPg";
 
 function App() {
+
   return (
     <div className="contain d-flex justify-content-center"
       style={{ minHeight: "100vh" }}

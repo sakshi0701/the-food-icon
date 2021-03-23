@@ -26,7 +26,7 @@ const Bake = () => {
         }
     }
 
-    return (
+     return (
         <>
             <div className="w-100 App">
                 <Navbar />
