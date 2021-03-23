@@ -42,27 +42,15 @@ export const NavLogo = styled(RLink)`
     cursor: pointer;
     font-family: 'Lobster', cursive;
 
+    @media screen and (max-width: 280px) {
+        font-size: 35px;
+    } 
+
     &:hover {
         text-decoration: none;
         color: white;
     }
 `;
-
-// export const MobileIcon = styled.div`
-//     display: none;
-
-//     @media screen and (max-width: 768px) {
-//         display:block;
-//         position: absolute;
-//         top:0;
-//         right: 0;
-//         transform: translate(-100%,60%);
-//         font-size: 1.8rem
-//         cursor: pointer;
-//         color: white;
-//         margin-top: 12px;
-//     }
-// `;
 
 export const NavMenu = styled.ul`
     display: flex;
