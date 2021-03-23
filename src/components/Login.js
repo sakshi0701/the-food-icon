@@ -71,7 +71,7 @@ export default function Login() {
   }
 
   useEffect(() => {
-    Aos.init({duration: 2000});
+    Aos.init({ duration: 1500 });
   }, []);
 
   return (
@@ -83,17 +83,36 @@ export default function Login() {
       </Nav>
 
       <div className="showcase">
-      <Carousel
-      enableAutoPlay={true}
-      autoPlaySpeed={9000}
-      pagination={false}
-      showArrows={false}
-      breakPoints={breakPoints}>
+        <Carousel
+          enableAutoPlay={true}
+          autoPlaySpeed={9000}
+          pagination={false}
+          showArrows={false}
+          breakPoints={breakPoints}>
           <Item><Image1 /></Item>
           <Item><Image3 /></Item>
           <Item><Image2 /></Item>
         </Carousel>
       </div>
+
+      <div className="slogan">
+        The flavors of Nature
+      </div>
+
+<div className="content">
+  <div className="content1" data-aos="fade-up">
+        Cooking is the art of preparing food that is started around 2 million years ago, cooking is done by professionals cooks and chefs in restaurants and other food establishments. We present you this website where we have listed some of the best handpicked recipes.
+      <p>
+          So what are you waiting for...? SignUp and enhance your skill!
+      </p>
+      </div>
+
+      <div className="content2" data-aos="fade-up">
+        Explore amazing recipes with us where we provide you a variety of cuisine and recipes with their videos for your smooth cooking journey.
+        Figure out our new  and try out new tastes!
+      </div>
+</div>
+      
 
       <div className="contain" data-aos="fade-up">
         <Card className="bg-dark card">
@@ -123,15 +142,17 @@ export default function Login() {
         </Card>
       </div>
       <div className="footer2">
-           <Footer />
-      </div>      
+        <Footer />
+      </div>
     </div>
   )
 }
 
 const Item = styled.div`
 display: flex;
-height: 100vh;
+justify-content: center;
+flex-direction: column;
+height: 300px;
 width: 100%;
 `;
 
