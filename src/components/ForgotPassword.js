@@ -3,7 +3,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link } from "react-router-dom"
 import { Nav, NavbarContainer, NavLogo } from "./Navbar/navstyle";
-import './front.css';
+import './front/front.css';
 
 export default function ForgotPassword() {
   const emailRef = useRef()

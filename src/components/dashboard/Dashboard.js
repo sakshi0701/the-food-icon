@@ -41,24 +41,25 @@ export default function Dashboard() {
 
   useEffect(() => {
     getRecipies();
-  }, [query]);                  //now gonna run only when we click submit
+    // eslint-disable-next-line
+  }, [query]);
 
   const getRecipies = async () => {
     setLoading(!Loading);
     const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await response.json();
-    setRecipies(data.hits);     // the "hits" in the json has all the data req!
+    setRecipies(data.hits);
     setLoading(false);
   };
 
   const updateSearch = e => {
-    setSearch(e.target.value);  //its the value of the input
+    setSearch(e.target.value);
   }
 
   const getSearch = e => {
-    e.preventDefault();         //so that it doesnt keep refreashing again and again
-    setQuery(search);           //updating our value
-    setSearch('');              //setting the search bar empty after searching
+    e.preventDefault();         
+    setQuery(search);      
+    setSearch('');       
   }
 
   useEffect(() => {

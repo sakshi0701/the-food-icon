@@ -1,7 +1,4 @@
-/* Here, the css of the recipe.js file will only be affected even if it shares the same class name with some other file  */
-
 .recipe {
-    /* border: 2px solid blue; */
     border-radius: 8px;
     background-color: rgb(191, 255, 197);
     border-left: 4px solid green;

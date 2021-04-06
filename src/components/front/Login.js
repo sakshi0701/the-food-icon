@@ -4,13 +4,13 @@ import styled from 'styled-components';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from "../contexts/AuthContext"
+import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
-import { Nav, NavbarContainer, NavLogo } from "./Navbar/navstyle";
-import Footer from '../components/footer/Footer';
-import one from '../components/images/one.jfif';
-import two from '../components/images/two.jpg';
-import three from '../components/images/three.jfif';
+import { Nav, NavbarContainer, NavLogo } from "../Navbar/navstyle";
+import Footer from '../footer/Footer';
+import one from '../images/one.jfif';
+import two from '../images/two.jpg';
+import three from '../images/three.jfif';
 import './front.css';
 
 // -------------------------------------------------
@@ -24,6 +24,7 @@ const breakPoints = [
 const Image1 = () => {
   return (
     <CardImg className="image">
+      {/* eslint-disable-next-line */}
       <img src={one} alt="Image" />
     </CardImg>
   )
@@ -32,6 +33,7 @@ const Image1 = () => {
 const Image2 = () => {
   return (
     <CardImg className="image">
+      {/* eslint-disable-next-line */}
       <img src={two} alt="Image" />
     </CardImg>
   )
@@ -40,6 +42,7 @@ const Image2 = () => {
 const Image3 = () => {
   return (
     <CardImg className="image">
+      {/* eslint-disable-next-line */}
       <img src={three} alt="Image" />
     </CardImg>
   )

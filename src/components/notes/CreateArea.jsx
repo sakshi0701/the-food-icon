@@ -9,7 +9,7 @@ function CreateArea({ submitButton, onAdd }) {
     content: "",
   });
 
-  function hadnleClick() {
+  function handleClick() {
     setIsExpanded(true);
   }
 
@@ -23,6 +23,7 @@ function CreateArea({ submitButton, onAdd }) {
     });
   }
 
+  // eslint-disable-next-line
   function submitButton(e) {
     onAdd(note);
     setNote({
@@ -47,7 +48,7 @@ function CreateArea({ submitButton, onAdd }) {
 
         <p>
           <textarea
-            onClick={hadnleClick}
+            onClick={handleClick}
             onChange={handleChange}
             name="content"
             value={note.content}

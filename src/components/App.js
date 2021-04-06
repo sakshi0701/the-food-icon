@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { AuthProvider } from "../contexts/AuthContext"
-import Signup from "./Signup"
-import Login from "./Login"
+import Signup from "./front/Signup"
+import Login from "./front/Login"
 import Dashboard from "./dashboard/Dashboard"
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
